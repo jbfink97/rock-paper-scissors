@@ -42,6 +42,7 @@ button{
     background-color: rgb(173, 230, 185);
     color: rgb(0,61,43);
     font-size: 30px;
+    cursor: pointer;
 }
 
 .scoreboxes{
