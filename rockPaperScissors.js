@@ -1,3 +1,4 @@
+window.addEventListener('load', () => {
 const plays = ["rock", "paper", "scissors"];
 
 function getComputerChoice() {
@@ -19,8 +20,4 @@ function playRound(){
 
     }
 }
-
-function game(){
-    let playerSelection;
-    let computerSelection;
-}
+})
