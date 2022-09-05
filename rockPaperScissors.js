@@ -50,10 +50,8 @@ window.addEventListener('load', () => {
     }
 
     function playAgainButton() {
-        let playAgainButton = document.createElement('button');
-        playAgainButton.id = "playAgain";
-        playAgainButton.textContent = 'Play again?';
-        gameWinner.appendChild(playAgainButton);
+        let playAgainButton = document.querySelector('.playAgain');
+        playAgainButton.style.visibility = 'visible';
     }
 
     const btns = document.querySelectorAll('button');
@@ -61,7 +59,7 @@ window.addEventListener('load', () => {
     const playerScoreDisplay = document.querySelector('.playerScore');
     const computerScoreDisplay = document.querySelector('.computerScore');
     const gameWinner = document.querySelector('.winner');
-    const playAgain = document.querySelector('#playAgain');
+    const playAgain = document.querySelector('.playAgain');
 
     let playerScore = 0;
     let computerScore = 0;
@@ -75,10 +73,9 @@ window.addEventListener('load', () => {
             playRound(playerSelection, computerSelection);
         })
     })
-    if (playerScore == 5 || computerScore == 5) {
-        console.log("hel")
-    playAgain.addEventListener('click', () => {
+
+    playAgain.addEventListener('click', () =>{
         window.location.reload();
     })
-}
+
 })

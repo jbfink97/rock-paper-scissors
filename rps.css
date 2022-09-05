@@ -70,8 +70,17 @@ button{
     padding-bottom: 30px;
 }
 
-#playAgain{
+.playAgain{
     font-size: 25px;
     margin-top: 20px;
-    height: 70px;;
+    height: 70px;
+    visibility: hidden;
+}
+
+#resultdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
